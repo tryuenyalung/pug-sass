@@ -2,12 +2,12 @@ const gulp = require('gulp')
 const sass = require('gulp-sass')
 const pug = require('gulp-pug')
 
-// gulp.task('sass', () => {
-//     gulp.src('src/scss/*.sass')
-//         .pipe( sass().on('error', sass.logError) )
-//         // .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
-//         .pipe( gulp.dest('dist/css') )
-// })
+gulp.task('sass', () => {
+    gulp.src('src/scss/*.sass')
+        // .pipe( sass().on('error', sass.logError) )
+        .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
+        .pipe( gulp.dest('dist/css') )
+})
 
 // gulp.task('html', () => {
 //     gulp.src('src/html/*')
@@ -22,7 +22,7 @@ gulp.task('pug', () => {
         .pipe( gulp.dest('dist/html') )
 })
 
-// gulp.task('default', ['sass', 'html'])
+gulp.task('default', ['sass', 'pug'])
 
 // gulp.task('watch', () => {
 //     gulp.watch('src/scss/*', ['sass'])
