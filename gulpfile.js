@@ -27,6 +27,7 @@ gulp.task('imagemin', ()=>{
 
 gulp.task('default', ['sass', 'pug', 'imagemin'] )
 
+
 // gulp.task('watch', () => {
 //     gulp.watch('src/scss/*', ['sass'])
 //     gulp.watch('src/html/*', ['html'])
