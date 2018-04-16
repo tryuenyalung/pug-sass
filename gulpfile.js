@@ -6,7 +6,7 @@ gulp.task('sass', () => {
     gulp.src('src/scss/*.sass')
         // .pipe( sass().on('error', sass.logError) )
         .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
-        .pipe( gulp.dest('dist/css') )
+        .pipe( gulp.dest('dist/assets/css') )
 })
 
 // gulp.task('html', () => {
@@ -15,11 +15,11 @@ gulp.task('sass', () => {
 // })
 
 gulp.task('pug', () => {
-    gulp.src('src/pug/*')
+    gulp.src('src/pug/layout/*')
         .pipe(pug({
             pretty: true
         }))
-        .pipe( gulp.dest('dist/html') )
+        .pipe( gulp.dest('dist') )
 })
 
 gulp.task('default', ['sass', 'pug'])
