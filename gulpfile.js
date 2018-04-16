@@ -1,5 +1,6 @@
 const gulp = require('gulp')
 const sass = require('gulp-sass')
+const pug = require('gulp-pug')
 
 // gulp.task('sass', () => {
 //     gulp.src('src/scss/*.sass')
@@ -12,6 +13,14 @@ const sass = require('gulp-sass')
 //     gulp.src('src/html/*')
 //         .pipe( gulp.dest('dist/html') )
 // })
+
+gulp.task('pug', () => {
+    gulp.src('src/pug/*')
+        .pipe(pug({
+            pretty: true
+        }))
+        .pipe( gulp.dest('dist/html') )
+})
 
 // gulp.task('default', ['sass', 'html'])
 
