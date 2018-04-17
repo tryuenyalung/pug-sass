@@ -4,7 +4,7 @@ const pug = require('gulp-pug')
 const imagemin = require('gulp-imagemin')
 
 gulp.task('sass', () => {
-    gulp.src('src/scss/*.sass')
+    gulp.src(['src/scss/*.sass', 'src/scss/*.scss'])
         // .pipe( sass().on('error', sass.logError) )
         .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
         .pipe( gulp.dest('dist/assets/css') )

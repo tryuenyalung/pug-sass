@@ -1,1 +1,18 @@
-.has-bg-img { background: url('/assets/images/img.jpg')center center; background-size:cover; }
+.has-bg-img { 
+    background: url('./../images/banner-1.jpeg')center center; background-size:cover; 
+}
+
+.navbar{
+    box-shadow: none !important;
+}
+.is-fullwidth {
+    width: 100%;
+}
+.is-automargin {
+    margin:auto; 
+}
+.is-grayscale {
+     -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */ 
+     filter: grayscale(100%); 
+}
+        
