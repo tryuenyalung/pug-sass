@@ -2,6 +2,13 @@
     background: url('./../images/banner-1.jpeg')center center; background-size:cover; 
 }
 
+.banner-mid-has-bg-img { 
+    background: url('./../images/img-quote.jpeg')center center; background-size:cover; 
+    // -webkit-filter: grayscale(80%); /* Safari 6.0 - 9.0 */ 
+    //  filter: grayscale(80%); 
+}
+ 
+
 .navbar{
     box-shadow: none !important;
 }
