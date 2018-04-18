@@ -30,3 +30,16 @@
     background-position: bottom left;
 }
         
+.navbar-menu {
+    @media screen and (max-width: 1087px){
+        background-color: transparent;
+        box-shadow: 0 8px 16px rgba(10,10,10,0.1);
+        padding: 0.5rem 0;
+    }
+}
+
+a.navbar-item:hover, a.navbar-item.is-active, .navbar-link:hover, .navbar-link.is-active {
+    background-color: transparent;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.2);
+}

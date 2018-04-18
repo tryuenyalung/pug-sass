@@ -19,13 +19,19 @@ gulp.task('pug', () => {
         .pipe( gulp.dest('dist') )
 })
 
+gulp.task('js', () => {
+    gulp.src('src/js/*')
+        .pipe( gulp.dest('dist/assets/js') )
+})
+
+
 gulp.task('imagemin', ()=>{
     gulp.src('src/images/*')
         .pipe(imagemin())
         .pipe( gulp.dest('dist/assets/images'))
 })
 
-gulp.task('default', ['sass', 'pug', 'imagemin'] )
+gulp.task('default', ['js','sass', 'pug', 'imagemin'] )
 
 
 // gulp.task('watch', () => {

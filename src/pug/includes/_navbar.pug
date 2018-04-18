@@ -5,9 +5,17 @@ nav(class="navbar is-transparent")
                 img(src="assets/images/logo-cvx.png", alt="") 
                 p(class="is-size-5") &nbsp; ConvX
 
+            a(role="button" class="navbar-burger has-text-white is-transparent" data-target="navMenu" aria-label="menu" aria-expanded="false")
+                span( aria-hidden="true" )
+                span( aria-hidden="true" )
+                span( aria-hidden="true" )
+
+
+
         div(class="navbar-end")
-            a(class="navbar-item has-text-white") About Us
-            a(class="navbar-item has-text-white") Contact Us
-            a(class="navbar-item has-text-white") How it Works
-            a(class="navbar-item")
-                button(class="button is-info") Sign In             
+            div(class="navbar-menu is-shadowless has-text-centered"  id="navMenu")
+                a(class="navbar-item has-text-white") About Us
+                a(class="navbar-item has-text-white") Contact Us
+                a(class="navbar-item has-text-white") How it Works
+                a(class="navbar-item")
+                    button(class="button is-info") Sign In             
