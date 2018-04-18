@@ -1,3 +1,20 @@
+// 1. Import the initial variables
+@import "../../node_modules/bulma/sass/utilities/initial-variables";
+@import "../../node_modules/bulma/sass/utilities/functions";
+
+@import url('https://fonts.googleapis.com/css?family=Dosis:300');
+
+$family-serif: 'Dosis', sans-serif !default;
+$family-primary: $family-serif;
+
+$cyan: #4054b0;
+$red:  #fc5a31;
+
+// 6. Import the rest of Bulma
+@import "../../node_modules/bulma/bulma";
+
+
+
 .has-bg-img { 
     background: url('./../images/banner-1.jpeg')center center; background-size:cover; 
 }
